@@ -1,7 +1,227 @@
-<head>
-  <title>Google analog kalnins</title>
-</head>
+<html>
+	<head>
+		<title>Google</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	</head>
+	<body>
+		<nav class="header">
+				<ul class="headbar">
+					<li><a href="#" class="text-link">Gmail</a></li>
+					<li><a href="#" class="text-link">Attēli</a></li>
+					<li><a href="#" class="icon-square"></a></li>
+					<li><a href="#" class="sign-in-button">Pierakstīties</a></li>
+				</ul>
+		</nav>
+		<main>
+		<img class="logo" src="https://th.bing.com/th/id/R79442b319909f75fd2961646267bbc57?rik=%2blyXc22uTe82lg&riu=http%3a%2f%2fi0.kym-cdn.com%2fphotos%2fimages%2fnewsfeed%2f000%2f161%2f999%2f1270580949023.png&ehk=rdylKOxyp0qch5x4Pw0n9aac%2fFu1btvyjY4TosGKibo%3d&risl=&pid=ImgRaw">
+		<form class="google-search" action="#">
+			<div class="search">
+				<input class="search-box" type="text">
+				<a href="#"><img class="mic-icon" src="images/micIcon.png"></a>
+			</div>
+			<input class="search-button" type="submit" value="Google Search">
+			<input class="search-button" type="submit" value="I'm Feeling Lucky">
+		</form>
+		<p class="language-option">Piedāvātā valoda: <a href="#">Latviešu</a></p>
+		</main>
+		<nav class="footer">
+			<ul class="footbar country"><li>Japan</li></ul>
+			<ul class="footbar foot-links">
+				<div class="left-foot">
+					<li><a href="#">Advertising</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">About</a></li>
+				</div>
+				<div class="right-foot">
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Settings</a></li>
+				</div>
+			</ul>
+		</nav>
+	</body>
+</html>
 
-<body>
-  <a href="https://mail.google.com/">Gmail</a>
-</body>
+<style>
+  * {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style-type: none;
+}
+
+html, body {
+	font-family: arial,sans-serif;
+	font-size: 13px;
+}
+
+nav.header {
+	top: 0;
+	float: right;
+	padding: 20px 30px 0 0;
+	height: 33px;
+}
+
+form {
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	text-align: center;
+}
+
+li {
+	float: left;
+}
+
+main {
+	clear: both;
+}
+
+nav.footer {
+	padding: 0 27px 0 0;
+}
+
+a {
+	display: inline-block;
+	color: #212121;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #181818;
+	text-decoration: underline;
+}
+
+.headbar li {
+	padding-left: 20px;
+}
+
+.text-link {
+	padding-top: 7px;
+}
+
+.sign-in-button {
+	padding: 8px 13px;
+	background-color: #447AFF;
+	border-radius: 2px;
+	color: white;
+	font-weight: bold;
+}
+
+.sign-in-button:hover {
+	box-shadow: 0 1px #4479FA;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.icon-square {
+    width: 20px;
+    background-image: url(../images/iconList.png);
+    background-size: 528px 68px;
+    background-position: -132px -38px;
+    opacity: .60;
+    padding: 15px 5px;
+}
+
+.icon-square:hover {
+	opacity: .84;
+}
+
+.logo {
+	display: block;
+	width: 272px;
+	margin: 0 auto;
+	padding-top: 10%;
+	padding-bottom: 30px;
+}
+
+.mic-icon {
+   display: inline-block;
+   position: relative;
+   top: 8px;
+   right: 40px;
+   width: 25px;
+   height: auto;
+   line-height: 44px;
+}
+
+.search-box {
+	display: inline-block;
+	width: 428px;
+	border: 1px;
+	height: 44px;
+	box-shadow: 1px 1px 2px #dbdbdb;
+	margin: 0 auto;
+	min-width: 350px;
+}
+
+.search-button {
+	display: inline-block;
+	padding: 11px 20px;
+	margin: 27px 1px;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	border: none;
+	background-color: #ffffff;
+	border-radius: 2px;
+	font-weight: bold;
+	color: #0a0606;
+	border: 1px solid #FFF;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
+.search-button:hover {
+	color: #000;
+	border: 1px solid #DDD;
+}
+
+.language-option {
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	text-align: center;
+}
+
+.language-option a {
+	color: #0000EE;
+}
+
+.language-option a:visited {
+	color: #551A8B;
+}
+
+.language-option a:active {
+	color: #EE0000;
+}
+
+.footbar {
+    color: #6F6F6F;
+    position: fixed;
+    width: 98%;
+    display: inline-block;
+    background-color: #F2F2F2;
+    bottom: 0;
+    line-height: 40px;
+}
+
+.footbar a {
+	color: #6F6F6F;
+	padding-left: 27px;
+}
+
+.right-foot {
+	float: right;
+}
+
+.country {
+	bottom: 40px;
+	border: 1px solid #d6d6d6;
+	padding-left: 27px;
+	font-size: 15px;
+}
+
+.foot-links {
+	padding-right: 27px;
+}
+</style>
